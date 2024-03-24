@@ -1,89 +1,165 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+	<head>
+		<title>Roundnet Noorderkempen</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="landing is-preload">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/10.9.0/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/10.9.0/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/10.9.0/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/10.9.0/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/10.9.0/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/10.9.0/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/10.9.0/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/10.9.0/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/10.9.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/10.9.0/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="index.html">Roundnet Noorderkempen</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="wie.html">Wie zijn wij</a></li>
+											<li><a href="info.html">Info & Contact</a></li>
+											<li><a href="media.html">Media</a></li>
+											<div style="position: absolute;bottom: 0;">
+												<img width="60%" src="images/logo-bg.png" style="margin-left: auto;margin-right: auto;display: block;">
+											</div>
+											
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<p>Welkom bij</p>
+							<h2>Roundnet Noorderkempen</h2>
+							<br/>
+							<ul class="actions special">
+								<li><a href="info.html" class="button secondary">FAQ</a></li>
+							</ul>
+						</div>
+						<a href="#one" class="more scrolly">Meer lezen</a>
+					</section>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+				<!-- One -->
+					<section id="one" class="wrapper style1 special">
+						<div class="inner">
+							<header class="major">
+								<h2 style="color: black;">Roundnet!</h2>
+								<p style="color: black">Welkom sportievelingen, ouders en sympathisanten op de website van Roundnet Noorderkempen. 
+								Roundnet Noorderkempen is een gloednieuwe sportvereniging gelegen in Turnhout en is klaar om deze sport leven in de Noorderkempen te blazen.</p>
+								<p style="color: black">Roundnet wordt geregeld in de volksmond ’spikeball’ genoemd en is ongeveer een decennia geleden van Amerika naar België overgewaaid. 
+								Studenten, jeugdverenigingen en vrienden zijn geregeld in parken druk in de weer bezig met het beoefenen van de sport. </p>
+							</header>
+							<ul class="icons major">
+								<li><span class="icon solid fas fa-running major style1"><span class="label">Teamwork</span></span></li>
+								<li><span class="icon solid fas fa-hands-helping major style2"><span class="label">Sportiviteit</span></span></li>
+								<li><span class="icon fas fa-circle major style3"><span class="label">Roundnet</span></span></li>
+							</ul>
+						</div>
+					</section>
+				
+				<!-- Special -->
+				<!--
+				<section id="special" class="wrapper style3 special">
+					<div class="inner">
+						<header class="major">
+							<h2>Opkomend toernooi!</h2>
+							<p>In oktober organiseren we een toernooi voor beginners en gevorderden in Turnhout.</p>
+						</header>
+						<ul class="features">
+							<li class="icon fa-paper-plane">
+								<h3>Waar?</h3>
+								<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+							</li>
+							<li class="icon solid fa-laptop">
+								<h3>Hoe inschrijven?</h3>
+								<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+							</li>
+							<li class="icon fa-heart">
+								<h3>Extra info te vinden op onze facebook pagina!</h3>
+							</li>
+						</ul>
+					</div>
+				</section>
+				-->
+				<!-- Two -->
+					<section id="two" class="wrapper alt style2">
+						<section class="spotlight">
+							<div class="image"><img src="images/hype-bg.jpg" alt="" /></div><div class="content">
+								<h2>Wat is roundnet <br />
+								nu precies?</h2>
+								<p>Roundnet is een dynamische balsport, waarbij twee duo’s het tegen elkaar opnemen. De vier spelers staan rond een minitrampoline en gebruiken een bal om zo punten te scoren. <br />
+								Deze sport vergt vlijmscherpe reflexen en teamspirit om je tegenstanders met de grond gelijk te maken.</p>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image"><img src="images/pic2.jpg" alt="" /></div><div class="content">
+								<h2>De regels<br />
+								van de sport</h2>
+								<p>De regels van de sport: De basisregel van Roundnet is dat de sport een ‘gentlemans game’ is. Het is niet steeds duidelijk of de bal de rim raakt, afwijkt via de pocket of dat de voet van de tegenstander in de no-hit zone staat. <br />
+								Desalniettemin heeft de ‘Spikeball Roundnet Association’ een hele oplijsting gemaakt van regels. Die kunnen jullie raadplegen via deze link: <a href="https://tournaments.spikeball.com/pages/2021-official-rules">Official rules</a></p>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image"><img src="images/pic3.jpg" alt="" /></div><div class="content">
+								<h2>Onze <br />
+								highlights!</h2>
+								<p>Check hier onze zotste rallies met bijpassende backhands, dropballen en no-looks.</p>
+								<ul class="actions special">
+									<li><a href="media.html" class="button secondary">Media</a></li>
+								</ul>
+							</div>
+						</section>
+					</section>
+
+				<!-- CTA -->
+					<section id="cta" class="wrapper style4">
+						<div class="inner">
+							<header>
+								<h2>Toekomst</h2>
+								<p> Kom gerust maar eens langs op één van onze trainingen om te zien of de sport iets voor jou is.
+									Meer informatie kan je vinden op onze facebook pagina.</p>
+								<p>Je zal ons ook altijd weten te vinden bij toekomstige roundnet evenementen.</p>
+							</header>
+							<ul class="actions stacked">
+								<h2></h2>
+								<li><a href="#" class="button fit primary">Facebook</a></li>
+								<li><a href="#" class="button fit">Evenementen</a></li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="https://www.facebook.com/profile.php?id=100076120993910" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/roundnet_noorderkempen/?hl=en" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://www.youtube.com/c/Spikeball" class="icon brands fa-youtube"><span class="label">Youtube</span></a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; Roundnet Noorderkempen 2024</li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
